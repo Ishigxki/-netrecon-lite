@@ -2,7 +2,7 @@ import socket
 
 target = input("Target IP or Hostname: ")
 
-for port in [22, 80, 433, 3306, 5432, 8080]:
+for port in [22, 80, 443, 3306, 5432, 8080]:
     sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     sock.settimeout(1)
 
